@@ -1,0 +1,134 @@
+vinu@mrvHP-Laptop-15-bs0xx:~/Documents/projects/html-css/html-basics$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	01-introduction-setup/
+
+nothing added to commit but untracked files present (use "git add" to track)
+vinu@mrvHP-Laptop-15-bs0xx:~/Documents/projects/html-css/html-basics$ git add .
+vinu@mrvHP-Laptop-15-bs0xx:~/Documents/projects/html-css/html-basics$ git commit -m "init"
+[master (root-commit) c301e91] init
+ 2 files changed, 9 insertions(+)
+ create mode 100644 01-introduction-setup/index.css
+ create mode 100644 01-introduction-setup/index.html
+vinu@mrvHP-Laptop-15-bs0xx:~/Documents/projects/html-css/html-basics$ git log
+commit c301e9112b14bb76e00d452147453323d7ec1718 (HEAD -> master)
+Author: vinu varghese <vinuvarghese404@gmail.com>
+Date:   Wed Aug 31 20:51:18 2022 +0530
+
+    init
+vinu@mrvHP-Laptop-15-bs0xx:~/Documents/projects/html-css/html-basics$ git diff
+diff --git a/01-introduction-setup/index.html b/01-introduction-setup/index.html
+index 14ed50a..528ac8d 100644
+--- a/01-introduction-setup/index.html
++++ b/01-introduction-setup/index.html
+@@ -5,5 +5,7 @@
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>01 Introduction</title>
+   </head>
+-  <body></body>
++  <body>
++    <h1>HI I'm Vinu</h1>
++  </body>
+ </html>
+ 
+ 
+ 
+ vinu@mrvHP-Laptop-15-bs0xx:~/Documents/projects/html-css/html-basics$ git remote add origin https://github.com/VinuVarghese4045/html-basics.git
+vinu@mrvHP-Laptop-15-bs0xx:~/Documents/projects/html-css/html-basics$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+vinu@mrvHP-Laptop-15-bs0xx:~/Documents/projects/html-css/html-basics$ git push --set-upstream origin master
+Username for 'https://github.com': vinuvarghese4045
+Password for 'https://vinuvarghese4045@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/VinuVarghese4045/html-basics.git/'
+vinu@mrvHP-Laptop-15-bs0xx:~/Documents/projects/html-css/html-basics$ ssh-keygen -t ed25519 -C "vinuvarghese404@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/home/vinu/.ssh/id_ed25519): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/vinu/.ssh/id_ed25519
+Your public key has been saved in /home/vinu/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:ovdxaWXUmojofGzDeYZL9ePJhjvGD++ONylYMzWj7vM vinuvarghese404@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|                 |
+|             .   |
+|            . .  |
+|       . . o+o   |
+|      o S oo=o   |
+|     + + +==     |
+|    . + @=B+o.   |
+|     . =.OO*=o   |
+|        oo+%E.   |
++----[SHA256]-----+
+vinu@mrvHP-Laptop-15-bs0xx:~/Documents/projects/html-css/html-basics$ cat /home/vinu/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIH97kdoYi2sYwTGVTjP9nJLmvnYxUsBgL0oqPr3rtga8 vinuvarghese404@gmail.com
+vinu@mrvHP-Laptop-15-bs0xx:~/Documents/projects/html-css/html-basics$ git push --set-upstream origin master
+Username for 'https://github.com': vinuvarghese4045
+Password for 'https://vinuvarghese4045@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/VinuVarghese4045/html-basics.git/'
+vinu@mrvHP-Laptop-15-bs0xx:~/Documents/projects/html-css/html-basics$ ^C
+vinu@mrvHP-Laptop-15-bs0xx:~/Documents/projects/html-css/html-basics$ git remote
+origin
+vinu@mrvHP-Laptop-15-bs0xx:~/Documents/projects/html-css/html-basics$ git remote -v
+origin	https://github.com/VinuVarghese4045/html-basics.git (fetch)
+origin	https://github.com/VinuVarghese4045/html-basics.git (push)
+vinu@mrvHP-Laptop-15-bs0xx:~/Documents/projects/html-css/html-basics$ git config credential.helper store 
+vinu@mrvHP-Laptop-15-bs0xx:~/Documents/projects/html-css/html-basics$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+vinu@mrvHP-Laptop-15-bs0xx:~/Documents/projects/html-css/html-basics$ git push --set-upstream origin master
+Username for 'https://github.com': vinuvarghese4045
+Password for 'https://vinuvarghese4045@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/VinuVarghese4045/html-basics.git/'
+vinu@mrvHP-Laptop-15-bs0xx:~/Documents/projects/html-css/html-basics$ git remote rm origin
+vinu@mrvHP-Laptop-15-bs0xx:~/Documents/projects/html-css/html-basics$ git remote
+vinu@mrvHP-Laptop-15-bs0xx:~/Documents/projects/html-css/html-basics$ git remote add origin git@github.com:VinuVarghese4045/html-basics.git
+vinu@mrvHP-Laptop-15-bs0xx:~/Documents/projects/html-css/html-basics$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+vinu@mrvHP-Laptop-15-bs0xx:~/Documents/projects/html-css/html-basics$ git push --set-upstream origin master
+The authenticity of host 'github.com (20.207.73.82)' can't be established.
+ECDSA key fingerprint is SHA256:p2QAMXNIC1TJYWeIOttrVc98/R1BUFWu3/LiyKgUfQM.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com,20.207.73.82' (ECDSA) to the list of known hosts.
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 481 bytes | 240.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To github.com:VinuVarghese4045/html-basics.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+vinu@mrvHP-Laptop-15-bs0xx:~/Documents/projects/html-css/html-basics$ git log
+commit c301e9112b14bb76e00d452147453323d7ec1718 (HEAD -> master, origin/master)
+Author: vinu varghese <vinuvarghese404@gmail.com>
+Date:   Wed Aug 31 20:51:18 2022 +0530
+
+    init
+vinu@mrvHP-Laptop-15-bs0xx:~/Documents/projects/html-css/html-basics$ ^C
+vinu@mrvHP-Laptop-15-bs0xx:~/Documents/projects/html-css/html-basics$ touch githelp
+vinu@mrvHP-Laptop-15-bs0xx:~/Documents/projects/html-css/html-basics$ 
+
+
+
