@@ -133,3 +133,76 @@ body {
   border-radius: 0 4px 4px 0;
 
 }
+
+
+
+/* .dropdownbtn {
+  display: block;
+  padding: 40;
+  color: transparent;
+  text-align: justify;
+  margin: 0;
+  padding-left: 140px;
+  background-color: transparent;
+  font-style: italic;
+  border-color:transparent;
+   */
+
+
+
+   .btn {
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+   
+
+ h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 60px;
+    text-align: center;
+    }
+  
+
+    .recent-activities h3 {
+
+      font-size: 22px;
+      text-align: center;
+
+      
+    }
+    .recent-activities{
+      margin-top: 10%;
+      
+    }
+
+    
+    .comment{
+
+      display:flex;
+      text-align:left;
+      width:auto;
+      justify-content:center;
+
+
+
+    }
+
+    .comment .comment-member{
+
+   
+    background: #fff;
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 300px;
+    padding:20px;
+    line-height:20px;
+    color:#8e8b8b;
+    position:relative;
+
+  }
