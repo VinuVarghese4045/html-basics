@@ -26,7 +26,6 @@ body {
   border-radius: 4px 0 0 4px;
   border-radius: 16px;
   text-align: center;
-  
 }
 
 .search-bar .search-container {
@@ -61,9 +60,8 @@ body {
 }
 
 .search-bar .search-icon {
-  
   text-align: center;
- 
+
   width: 24px;
   height: 24px;
   display: inline-block;
@@ -114,7 +112,7 @@ body {
   display: inline;
 }
 
-.header-below-items{
+.header-below-items {
   color: #fff;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
@@ -127,14 +125,11 @@ body {
   padding-left: 35px;
   letter-spacing: 01;
 }
-.search-icon{
-  padding: 15px;  
+.search-icon {
+  padding: 15px;
   vertical-align: middle;
   border-radius: 0 4px 4px 0;
-
 }
-
-
 
 /* .dropdownbtn {
   display: block;
@@ -148,61 +143,53 @@ body {
   border-color:transparent;
    */
 
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
 
+h2 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 60px;
+  text-align: center;
+}
 
-   .btn {
-    border: none;
-    background-color: inherit;
-    padding: 14px 28px;
-    font-size: 16px;
-    cursor: pointer;
-    display: inline-block;
-  }
+.recent-activities h3 {
+  font-size: 22px;
+  text-align: center;
+}
+.recent-activities {
+  margin-top: 10%;
+}
+
+.comment {
+  display: flex;
+  text-align: left;
+  width: auto;
+  justify-content: center;
   
-   
+}
 
- h2{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 60px;
-    text-align: center;
-    }
-  
+.comment .comment-member {
+  background: rgb(180, 39, 39);
+  margin:px;
+  margin-bottom: 50px;
+  width: 300px;
+  padding: 20px;
+  line-height: 20px;
+  color: #8e8b8b;
+  position: relative;
 
-    .recent-activities h3 {
+}
+.comment .comment-member p{
+  color:#fdfbf3;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 12px 0;
 
-      font-size: 22px;
-      text-align: center;
-
-      
-    }
-    .recent-activities{
-      margin-top: 10%;
-      
-    }
-
-    
-    .comment{
-
-      display:flex;
-      text-align:left;
-      width:auto;
-      justify-content:center;
-
-
-
-    }
-
-    .comment .comment-member{
-
-   
-    background: #fff;
-    margin: 5px;
-    margin-bottom: 50px;
-    width: 300px;
-    padding:20px;
-    line-height:20px;
-    color:#8e8b8b;
-    position:relative;
-
-  }
+}
